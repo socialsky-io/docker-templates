@@ -8,6 +8,7 @@
       "Music"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "4040:4040/tcp"
@@ -56,6 +57,11 @@
         "set": "-Xms256m -Xmx512m"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/airsonic-logo.png",
     "type": 1
   },
@@ -87,6 +93,11 @@
         "name": "TZ"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/authelia.png",
     "type": 1
   },
@@ -100,6 +111,7 @@
       "Music"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "6767:6767/tcp"
@@ -134,6 +146,11 @@
         "name": "TZ"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bazarr.png",
     "type": 1
   },
@@ -146,6 +163,7 @@
       "Music"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8337:8337/tcp"
@@ -176,6 +194,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/beets-icon.png",
     "type": 1
   },
@@ -200,6 +223,12 @@
         "container": "/config"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
     "type": 1
   },
@@ -213,6 +242,7 @@
       "Other"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "4040:4040/tcp"
@@ -248,6 +278,11 @@
         "name": "CONTEXT_PATH"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/booksonic.png",
     "type": 1
   },
@@ -272,6 +307,12 @@
         "container": "/config"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/embystat.png",
     "type": 1
   },
@@ -279,10 +320,12 @@
     "title": "Headphones",
     "name": "headphones",
     "image": "linuxserver/headphones:latest",
+    "description": null,
     "categories": [
       "Music"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8181:8181/tcp"
@@ -313,6 +356,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/headphones-icon.png",
     "type": 1
   },
@@ -327,6 +375,7 @@
       "Other"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp",
@@ -350,6 +399,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/heimdall-icon.png",
     "type": 1
   },
@@ -378,6 +432,12 @@
         "container": "/www/config.yml"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/homer.png",
     "type": 1
   },
@@ -391,6 +451,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "3000:3000/tcp"
@@ -401,12 +462,19 @@
         "container": "/var/lib/mysql"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/huginn.png",
     "type": 1
   },
   {
     "title": "Invoice Ninja",
     "name": "invoice_ninja",
+    "image": "",
     "description": "Invoices, Expenses and Tasks built with Laravel and Flutter.",
     "categories": [
       "Cloud",
@@ -417,6 +485,9 @@
     ],
     "platform": "linux",
     "note": "The database user is invoice_ninja and the database is ninja_db. Please generate an app key following the documentation <a href='https://github.com/invoiceninja/dockerfiles'>here</a>. ",
+    "restart_policy": "",
+    "ports": [],
+    "volumes": [],
     "env": [
       {
         "default": "invoice.my.domain",
@@ -444,12 +515,17 @@
         "name": "PORT"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/invoice_ninja.png",
     "repository": {
       "stackfile": "Template/Stack/invoice-ninja.yml",
       "url": "https://github.com/SelfhostedPro/selfhosted_templates"
     },
-    "type": 1
+    "type": 3
   },
   {
     "title": "Jackett",
@@ -461,6 +537,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "9117:9117/tcp"
@@ -487,6 +564,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/jacket-icon.png",
     "type": 1
   },
@@ -501,6 +583,7 @@
       "Photos"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8096:8096/tcp",
@@ -536,6 +619,11 @@
         "name": "TZ"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/jellyfin.png",
     "type": 1
   },
@@ -548,6 +636,7 @@
       "Video"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8080/tcp",
@@ -571,6 +660,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/kodi-icon.png",
     "type": 1
   },
@@ -583,6 +677,7 @@
       "Books"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "5299:5299/tcp"
@@ -610,6 +705,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lazylibrarian-icon.png",
     "type": 1
   },
@@ -623,6 +723,7 @@
       "Web"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp",
@@ -681,14 +782,23 @@
         "set": "http"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/letsencrypt.png",
     "type": 1
   },
   {
     "title": "libresonic",
+    "name": "",
     "image": "linuxserver/libresonic:latest",
     "description": "Libresonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room. /music = Location of music. /media = Location of other media. /podcasts = Location of podcasts. /playlists = Location for playlists storage. CONTEXT_PATH is for setting url-base in reverse proxy setups - (optional) Default user/pass is admin/admin",
+    "categories": [],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "4040/tcp"
     ],
@@ -731,6 +841,11 @@
         "set": "America/Chicago"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "category": [
       "Music"
     ],
@@ -747,6 +862,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp"
@@ -757,6 +873,12 @@
         "container": "/config"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/speedtest.png",
     "type": 1
   },
@@ -770,6 +892,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8765:80/tcp"
@@ -801,8 +924,13 @@
         "set": "true"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://repository-images.githubusercontent.com/254024234/7552e180-8690-11ea-9f00-9a53b6a6baa3",
-    "type": 1
+    "type": 3
   },
   {
     "title": "Lychee",
@@ -816,6 +944,7 @@
       "Photos"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp"
@@ -842,6 +971,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lychee-icon.png",
     "type": 1
   },
@@ -855,6 +989,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "3306:3306/tcp"
@@ -882,6 +1017,11 @@
         "set": ""
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mariadb-icon.png",
     "type": 1
   },
@@ -894,6 +1034,7 @@
       "Other"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8080:8080/tcp",
@@ -916,6 +1057,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mcmyadmin-icon.png",
     "type": 1
   },
@@ -929,6 +1075,7 @@
       "Video"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8081:8081/tcp"
@@ -959,6 +1106,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/medusa-icon.png",
     "type": 1
   },
@@ -971,6 +1123,7 @@
       "Other"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "30000:30000/udp"
@@ -992,6 +1145,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/minetest-icon.png",
     "type": 1
   },
@@ -1006,12 +1164,14 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8875:8875/tcp",
       "554:554/tcp",
       "1900:1900/udp"
     ],
+    "volumes": [],
     "env": [
       {
         "default": "1000",
@@ -1024,6 +1184,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/minisatip-icon.png",
     "type": 1
   },
@@ -1037,6 +1202,7 @@
       "Music"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "3000:3000/tcp"
@@ -1051,6 +1217,12 @@
         "container": "/music"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mstream.png",
     "type": 1
   },
@@ -1065,6 +1237,7 @@
       "Chat"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "64738:64738/tcp",
@@ -1104,6 +1277,11 @@
         "name": "TZ"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/Mumble-logo.png",
     "type": 1
   },
@@ -1118,6 +1296,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "5000:5000/tcp"
@@ -1149,6 +1328,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/musicbrainz-icon.png",
     "type": 1
   },
@@ -1164,6 +1348,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp"
@@ -1186,6 +1371,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/muximux-icon.png",
     "type": 1
   },
@@ -1199,6 +1389,7 @@
       "Books"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8090:8090/tcp"
@@ -1229,12 +1420,18 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mylar-icon.png",
     "type": 1
   },
   {
     "title": "Nextcloud",
     "name": "nextcloud",
+    "image": "",
     "description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
     "categories": [
       "Cloud",
@@ -1245,6 +1442,9 @@
     ],
     "platform": "linux",
     "note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
+    "restart_policy": "",
+    "ports": [],
+    "volumes": [],
     "env": [
       {
         "default": "1000",
@@ -1273,12 +1473,17 @@
         "name": "PORT"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nextcloud-icon.png",
     "repository": {
       "stackfile": "Template/Stack/nextcloud.yml",
       "url": "https://github.com/SelfhostedPro/selfhosted_templates"
     },
-    "type": 1
+    "type": 3
   },
   {
     "title": "Nginx",
@@ -1290,6 +1495,7 @@
       "Proxy"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp",
@@ -1313,6 +1519,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nginx-icon.png",
     "type": 1
   },
@@ -1326,6 +1537,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80:8080/tcp",
@@ -1338,6 +1550,12 @@
         "container": "/config"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/proxy_mgr.png",
     "type": 1
   },
@@ -1350,6 +1568,7 @@
       "Downloaders"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "6789:6789/tcp"
@@ -1376,6 +1595,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nzbget-icon.png",
     "type": 1
   },
@@ -1390,6 +1614,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "5076:5076/tcp"
@@ -1416,6 +1641,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/hydra-icon.png",
     "type": 1
   },
@@ -1431,6 +1661,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "3579:3579/tcp"
@@ -1453,6 +1684,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ombi.png",
     "type": 1
   },
@@ -1465,6 +1701,7 @@
       "Other"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "943:943/tcp",
@@ -1494,6 +1731,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/openvpn-as-icon.png",
     "type": 1
   },
@@ -1507,6 +1749,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp"
@@ -1529,6 +1772,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/organizr-icon.png",
     "type": 1
   },
@@ -1541,6 +1789,7 @@
       "Other"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8888:8888/tcp",
@@ -1564,6 +1813,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "http://i.imgur.com/8LadrLg.png",
     "type": 1
   },
@@ -1576,6 +1830,7 @@
       "Photos"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp"
@@ -1606,6 +1861,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/photoshow-icon.png",
     "type": 1
   },
@@ -1630,17 +1890,28 @@
         "container": "/app/db/database"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/snibox.png",
     "type": 1
   },
   {
     "title": "Bookstack",
+    "name": "",
+    "image": "",
     "description": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
     "categories": [
       "Wiki"
     ],
     "platform": "linux",
     "note": "Default login is admin@admin.com with a password of password. The database created is called bookstackapp and the database user is called bookstack",
+    "restart_policy": "",
+    "ports": [],
+    "volumes": [],
     "env": [
       {
         "default": "1000",
@@ -1669,12 +1940,17 @@
         "name": "PORT"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bookstack2.png",
     "repository": {
       "stackfile": "Template/Stack/bookstack.yml",
       "url": "https://github.com/SelfhostedPro/selfhosted_templates"
     },
-    "type": 1
+    "type": 3
   },
   {
     "title": "Chevereto",
@@ -1687,6 +1963,7 @@
       "Photo"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp"
@@ -1733,6 +2010,11 @@
         "set": ""
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/Chevereto.png",
     "type": 1
   },
@@ -1746,6 +2028,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "4000:4000/tcp"
@@ -1756,6 +2039,12 @@
         "container": "/config"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/chowdown.png",
     "type": 1
   },
@@ -1769,6 +2058,7 @@
       "Books"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8083:8083/tcp"
@@ -1795,6 +2085,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/calibre-web-icon.png",
     "type": 1
   },
@@ -1807,6 +2102,7 @@
       "Downloaders"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "5060:5060/tcp"
@@ -1829,6 +2125,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cardigann.png",
     "type": 1
   },
@@ -1842,6 +2143,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8443:8443/tcp"
@@ -1881,6 +2183,11 @@
         "name": "PROXY_DOMAIN"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/code-server.png",
     "type": 1
   },
@@ -1893,6 +2200,7 @@
       "Productivity"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp"
@@ -1915,6 +2223,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/codiad-icon.png",
     "type": 1
   },
@@ -1928,6 +2241,7 @@
       "Books"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp"
@@ -1954,6 +2268,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cops-icon.png",
     "type": 1
   },
@@ -1967,6 +2286,7 @@
       "Video"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "5050:5050/tcp"
@@ -1997,6 +2317,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/couchpotato-icon.png",
     "type": 1
   },
@@ -2009,7 +2334,9 @@
       "Music"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
+    "ports": [],
     "volumes": [
       {
         "bind": "/portainer/Files/AppData/Config/Daapd",
@@ -2032,6 +2359,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/daapd-icon.png",
     "type": 1
   },
@@ -2045,6 +2377,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "5000:5000/tcp"
@@ -2055,6 +2388,12 @@
         "container": "/dashmachine/dashmachine/user_data"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dashmachine_logo.png",
     "type": 1
   },
@@ -2069,6 +2408,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8080/tcp"
@@ -2095,6 +2435,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/davos.png",
     "type": 1
   },
@@ -2123,18 +2468,27 @@
         "container": "/downloads"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deemix.png",
     "type": 1
   },
   {
     "title": "Deluge",
+    "name": "",
     "image": "linuxserver/deluge:latest",
     "description": "Deluge is a lightweight, Free Software, cross-platform BitTorrent client providing: Full Encryption, WebUI, Plugin System, Much more...",
     "categories": [
       "Downloaders"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
+    "ports": [],
     "volumes": [
       {
         "bind": "/portainer/Files/AppData/Config/Deluge",
@@ -2162,6 +2516,11 @@
         "set": "000"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deluge-icon.png",
     "namme": "deluge",
     "type": 1
@@ -2176,6 +2535,7 @@
       "Management"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "1443:1443/tcp",
@@ -2200,6 +2560,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://github.com/domoticz/domoticz/raw/master/www/images/logo.png",
     "type": 1
   },
@@ -2213,7 +2578,10 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
+    "ports": [],
+    "volumes": [],
     "env": [
       {
         "label": "SUBDOMAINS",
@@ -2236,6 +2604,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/duckdns.png",
     "type": 1
   },
@@ -2252,6 +2625,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8200:8200/tcp"
@@ -2283,6 +2657,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/duplicati-icon.png",
     "type": 1
   },
@@ -2297,6 +2676,7 @@
       "Photos"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8096:8096/tcp",
@@ -2332,6 +2712,11 @@
         "name": "TZ"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/emby.png",
     "type": 1
   },
@@ -2360,7 +2745,12 @@
         "container": "/srv"
       }
     ],
+    "env": [],
     "command": "--port 80 --database /data/database.db --root /srv",
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filebrowser.png",
     "type": 1
   },
@@ -2373,6 +2763,7 @@
       "Other"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp"
@@ -2395,6 +2786,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/freshrss-icon.png",
     "type": 1
   },
@@ -2409,7 +2805,9 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
+    "ports": [],
     "volumes": [
       {
         "bind": "/portainer/Files/AppData/Config/Gazee",
@@ -2436,6 +2834,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/gazee-logo.png",
     "type": 1
   },
@@ -2450,6 +2853,7 @@
       "Finance"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp"
@@ -2476,6 +2880,11 @@
         "name": "TZ"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/grocy_logo.png",
     "type": 1
   },
@@ -2500,6 +2909,12 @@
         "container": "/config"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/guacamole.png",
     "type": 1
   },
@@ -2514,6 +2929,7 @@
       "Other"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8085:8085/tcp"
@@ -2536,6 +2952,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/htpcmanager-icon.png",
     "type": 1
   },
@@ -2549,6 +2970,7 @@
       "Music"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8686:8686/tcp"
@@ -2579,6 +3001,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lidarr.png",
     "type": 1
   },
@@ -2611,6 +3038,12 @@
         "container": "/etc/dnsmasq.d"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pihole.png",
     "type": 1
   },
@@ -2623,6 +3056,7 @@
       "Photos"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp"
@@ -2645,6 +3079,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/piwigo-icon.png",
     "type": 1
   },
@@ -2659,7 +3098,9 @@
       "Photos"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
+    "ports": [],
     "volumes": [
       {
         "bind": "/portainer/Files/AppData/Config/Plex",
@@ -2691,6 +3132,11 @@
         "set": "latest"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/plex-icon.png",
     "network": "host",
     "type": 1
@@ -2707,6 +3153,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "3000:3000/tcp"
@@ -2734,6 +3181,11 @@
         "set": ""
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/plexrequests-icon.png",
     "type": 1
   },
@@ -2749,6 +3201,7 @@
       "Other"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp"
@@ -2775,6 +3228,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/projectsend-logo.png",
     "type": 1
   },
@@ -2802,12 +3260,19 @@
         "container": "/root"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/protonmail-bridge.png",
     "type": 1
   },
   {
     "title": "Pritunl",
     "name": "pritunl",
+    "image": "",
     "description": "Pritunl container built on Alpine Linux. Supports IPv6 and running behind a reverse proxy. This container requires an external Mongo DB and should be run via Docker Compose or other orchestration.",
     "categories": [
       "VPN",
@@ -2817,6 +3282,9 @@
     ],
     "platform": "linux",
     "note": "Documentation on this containier can be found here: <a href=https://hub.docker.com/r/goofball222/pritunl>https://hub.docker.com/r/goofball222/pritunl</a>",
+    "restart_policy": "",
+    "ports": [],
+    "volumes": [],
     "env": [
       {
         "default": "false",
@@ -2838,12 +3306,17 @@
         "name": "WIREGUARD"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://pritunl.com/img/pritunl_logo0.png",
     "repository": {
       "stackfile": "Template/Stack/pritunl.yml",
       "url": "https://github.com/SelfhostedPro/selfhosted_templates"
     },
-    "type": 1
+    "type": 3
   },
   {
     "title": "Pydio",
@@ -2855,6 +3328,7 @@
       "Other"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "443/tcp"
@@ -2881,6 +3355,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pydio-icon.png",
     "type": 1
   },
@@ -2893,6 +3372,7 @@
       "Downloaders"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "6881:6881/tcp",
@@ -2921,6 +3401,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/qbittorrent-icon.png",
     "type": 1
   },
@@ -2933,6 +3418,7 @@
       "Messenger"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "4242:4242/tcp"
@@ -2955,6 +3441,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/quassel-core-icon.png",
     "type": 1
   },
@@ -2968,6 +3459,7 @@
       "Video"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "7878:7878/tcp"
@@ -2998,6 +3490,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/radarr.png",
     "type": 1
   },
@@ -3011,6 +3508,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp"
@@ -3021,6 +3519,12 @@
         "container": "/usr/src/app"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/reactiveresume.png",
     "type": 1
   },
@@ -3036,7 +3540,9 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
+    "ports": [],
     "volumes": [
       {
         "bind": "/portainer/Files/AppData/Config/Resilio-Sync",
@@ -3062,6 +3568,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/resilio.png",
     "type": 1
   },
@@ -3074,6 +3585,7 @@
       "Downloaders"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp",
@@ -3102,6 +3614,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
     "type": 1
   },
@@ -3114,6 +3631,7 @@
       "Downloaders"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8080:8080/tcp",
@@ -3145,6 +3663,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sabnzbd-icon.png",
     "type": 1
   },
@@ -3158,6 +3681,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8080/tcp"
@@ -3168,6 +3692,12 @@
         "container": "/srv/shiori"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://avatars.githubusercontent.com/u/41993376?s=200&v=4",
     "type": 1
   },
@@ -3181,6 +3711,7 @@
       "Video"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8081:8081/tcp"
@@ -3211,6 +3742,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickchill-icon.png",
     "type": 1
   },
@@ -3224,6 +3760,7 @@
       "Video"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8081:8081/tcp"
@@ -3254,6 +3791,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickgear-icon.png",
     "type": 1
   },
@@ -3261,10 +3803,12 @@
     "title": "SmokePing",
     "name": "smokeping",
     "image": "linuxserver/smokeping:latest",
+    "description": null,
     "categories": [
       "Management"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp"
@@ -3291,6 +3835,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/smokeping-icon.png",
     "type": 1
   },
@@ -3304,6 +3853,7 @@
       "Video"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8989:8989/tcp"
@@ -3338,6 +3888,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sonarr-icon.png",
     "type": 1
   },
@@ -3345,6 +3900,7 @@
     "title": "SyncThing",
     "name": "syncthing",
     "image": "linuxserver/syncthing:latest",
+    "description": null,
     "categories": [
       "Backup",
       "Cloud",
@@ -3352,6 +3908,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8384:8384/tcp",
@@ -3379,6 +3936,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/syncthing-icon.png",
     "type": 1
   },
@@ -3392,6 +3954,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8181:8181/tcp"
@@ -3418,6 +3981,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tautulli-icon.png",
     "type": 1
   },
@@ -3430,6 +3998,7 @@
       "Messenger"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "9000:9000/tcp"
@@ -3452,6 +4021,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
     "type": 1
   },
@@ -3465,6 +4039,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8080:8080/tcp"
@@ -3475,6 +4050,12 @@
         "container": "/var/lib/tiddlywiki"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tiddlywiki.png",
     "type": 1
   },
@@ -3487,6 +4068,7 @@
       "Downloaders"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "9091:9091/tcp",
@@ -3517,6 +4099,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/transmission-icon.png",
     "type": 1
   },
@@ -3579,6 +4166,11 @@
         "name": "LOCAL_NETWORK"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/transmission-icon.png",
     "type": 1
   },
@@ -3591,6 +4183,7 @@
       "Other"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp"
@@ -3613,6 +4206,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tt-rss-icon.png",
     "type": 1
   },
@@ -3626,6 +4224,7 @@
       "Other"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "9981:9981/tcp",
@@ -3652,6 +4251,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "http://i.imgur.com/zGSUAT4.png",
     "type": 1
   },
@@ -3665,6 +4269,7 @@
       "Books"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "2202:2202/tcp",
@@ -3698,6 +4303,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ubooquity-icon.png",
     "type": 1
   },
@@ -3705,11 +4315,13 @@
     "title": "UniFi Controller",
     "name": "unifi-controller",
     "image": "linuxserver/unifi-controller:latest",
+    "description": null,
     "categories": [
       "Management",
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "3478:3478/udp",
@@ -3739,6 +4351,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/unifi-icon.png",
     "type": 1
   },
@@ -3755,12 +4372,19 @@
     "platform": "linux",
     "note": "It is recommended to manually update your containers but we're including this for those of you that don't care",
     "restart_policy": "unless-stopped",
+    "ports": [],
     "volumes": [
       {
         "bind": "/var/run/docker.sock",
         "container": "/var/run/docker.sock"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/watchtower.png",
     "type": 1
   },
@@ -3773,7 +4397,9 @@
       "Downloaders"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
+    "ports": [],
     "volumes": [
       {
         "bind": "/portainer/Files/AppData/Config/WebGrabPlus",
@@ -3796,6 +4422,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/webgrabplus.png",
     "type": 1
   },
@@ -3809,6 +4440,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "5001:5000/tcp"
@@ -3819,6 +4451,12 @@
         "container": "/config"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/whoogle.png",
     "type": 1
   },
@@ -3832,6 +4470,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "3100:3000/tcp"
@@ -3858,6 +4497,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/wikijs.png",
     "type": 1
   },
@@ -3871,6 +4515,7 @@
       "Downloaders"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "17442:17442/tcp"
@@ -3897,6 +4542,12 @@
         "container": "/app/audio"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ytdlm.png",
     "type": 1
   },
@@ -3909,6 +4560,7 @@
       "CCTV"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "1935:1935/tcp",
@@ -3953,6 +4605,11 @@
         "set": "UniFi Video"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://theme.zdassets.com/theme_assets/77613/bc2b49c78f1defbd9c7ac74d012b08135fb5344b.svg",
     "type": 1
   },
@@ -3966,6 +4623,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8001:8000/tcp"
@@ -3980,6 +4638,12 @@
         "container": "/var/run/docker.sock"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/Yacht/master/readme_media/Yacht_logo_1_dark.png",
     "type": 1
   },
@@ -3992,6 +4656,7 @@
       "Messenger"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "6501:6501/tcp"
@@ -4014,6 +4679,11 @@
         "name": "PGID"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/znc-icon.png",
     "type": 1
   },
@@ -4028,6 +4698,7 @@
       "Tools"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "8112:8112/tcp"
@@ -4072,6 +4743,11 @@
         "name": "OPENVPN_PASSWORD"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1
   },
   {
@@ -4083,21 +4759,32 @@
       "Security"
     ],
     "platform": "linux",
+    "note": "",
     "restart_policy": "unless-stopped",
     "ports": [
       "3000:3000/tcp"
     ],
+    "volumes": [],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "logo": "https://dradisframework.com/images/logo_dradispro_letters.png",
     "type": 1
   },
   {
     "title": "Registry",
+    "name": "",
     "image": "registry:latest",
     "description": "Docker image registry",
     "categories": [
       "docker"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "5000/tcp"
     ],
@@ -4106,17 +4793,26 @@
         "container": "/var/lib/registry"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png"
   },
   {
     "title": "Nginx",
+    "name": "",
     "image": "nginx:latest",
     "description": "High performance web server",
     "categories": [
       "webserver"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "80/tcp",
       "443/tcp"
@@ -4129,17 +4825,26 @@
         "container": "/usr/share/nginx/html"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/nginx.png"
   },
   {
     "title": "Httpd",
+    "name": "",
     "image": "httpd:latest",
     "description": "Open-source HTTP server",
     "categories": [
       "webserver"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "80/tcp"
     ],
@@ -4148,17 +4853,26 @@
         "container": "/usr/local/apache2/htdocs/"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/httpd.png"
   },
   {
     "title": "Caddy",
+    "name": "",
     "image": "abiosoft/caddy:latest",
     "description": "HTTP/2 web server with automatic HTTPS",
     "categories": [
       "webserver"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "80/tcp",
       "443/tcp",
@@ -4169,17 +4883,26 @@
         "container": "/root/.caddy"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/caddy.png"
   },
   {
     "title": "MySQL",
+    "name": "",
     "image": "mysql:latest",
     "description": "The most popular open-source database",
     "categories": [
       "database"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "3306/tcp"
     ],
@@ -4194,17 +4917,25 @@
         "label": "Root password"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mysql.png"
   },
   {
     "title": "MariaDB",
+    "name": "",
     "image": "mariadb:latest",
     "description": "Performance beyond MySQL",
     "categories": [
       "database"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "3306/tcp"
     ],
@@ -4219,17 +4950,25 @@
         "label": "Root password"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mariadb.png"
   },
   {
     "title": "PostgreSQL",
+    "name": "",
     "image": "postgres:latest",
     "description": "The most advanced open-source database",
     "categories": [
       "database"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "5432/tcp"
     ],
@@ -4248,17 +4987,25 @@
         "label": "Superuser password"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/postgres.png"
   },
   {
     "title": "Mongo",
+    "name": "",
     "image": "mongo:latest",
     "description": "Open-source document-oriented database",
     "categories": [
       "database"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "27017/tcp"
     ],
@@ -4267,17 +5014,26 @@
         "container": "/data/db"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mongo.png"
   },
   {
     "title": "CockroachDB",
+    "name": "",
     "image": "cockroachdb/cockroach:latest",
     "description": "An open-source, survivable, strongly consistent, scale-out SQL database",
     "categories": [
       "database"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "26257/tcp",
       "8080/tcp"
@@ -4287,18 +5043,26 @@
         "container": "/cockroach/cockroach-data"
       }
     ],
+    "env": [],
     "command": "start --insecure",
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/cockroachdb.png"
   },
   {
     "title": "CrateDB",
+    "name": "",
     "image": "crate:latest",
     "description": "An open-source distributed SQL database",
     "categories": [
       "database"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "4200/tcp",
       "4300/tcp"
@@ -4308,17 +5072,26 @@
         "container": "/data"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/cratedb.png"
   },
   {
     "title": "Elasticsearch",
+    "name": "",
     "image": "elasticsearch:latest",
     "description": "Open-source search and analytics engine",
     "categories": [
       "database"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "9200/tcp",
       "9300/tcp"
@@ -4328,11 +5101,18 @@
         "container": "/usr/share/elasticsearch/data"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/elasticsearch.png"
   },
   {
     "title": "Gitlab CE",
+    "name": "",
     "image": "gitlab/gitlab-ce:latest",
     "description": "Open-source end-to-end software development platform",
     "categories": [
@@ -4341,6 +5121,7 @@
     ],
     "platform": "linux",
     "note": "Default username is <b>root</b>. Check the <a href=\"https://docs.gitlab.com/omnibus/docker/README.html#after-starting-a-container\" target=\"_blank\">Gitlab documentation</a> to get started.",
+    "restart_policy": "",
     "ports": [
       "80/tcp",
       "443/tcp",
@@ -4357,17 +5138,26 @@
         "container": "/var/opt/gitlab"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/gitlab_ce.png"
   },
   {
     "title": "Minio",
+    "name": "",
     "image": "minio/minio:latest",
     "description": "A distributed object storage server built for cloud applications and devops",
     "categories": [
       "storage"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "9000/tcp"
     ],
@@ -4387,20 +5177,37 @@
       {
         "name": "MINIO_SECRET_KEY",
         "label": "Minio secret key"
+      },
+      {
+        "name": "MINIO_DOMAIN",
+        "default": "",
+        "label": "Minio domain"
+      },
+      {
+        "name": "MINIO_BROWSER",
+        "default": "true",
+        "label": "Minio browser"
       }
     ],
     "command": "server /data",
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/minio.png"
   },
   {
     "title": "Scality S3",
+    "name": "",
     "image": "scality/s3server",
     "description": "Standalone AWS S3 protocol server",
     "categories": [
       "storage"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "8000/tcp"
     ],
@@ -4422,11 +5229,17 @@
         "label": "Scality S3 secret key"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/scality-s3.png"
   },
   {
     "title": "SQL Server",
+    "name": "",
     "image": "microsoft/mssql-server-linux:2017-GA",
     "description": "Microsoft SQL Server on Linux",
     "categories": [
@@ -4434,9 +5247,11 @@
     ],
     "platform": "linux",
     "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
+    "restart_policy": "",
     "ports": [
       "1433/tcp"
     ],
+    "volumes": [],
     "env": [
       {
         "name": "ACCEPT_EULA",
@@ -4447,11 +5262,17 @@
         "label": "SA password"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png"
   },
   {
     "title": "SQL Server Express",
+    "name": "",
     "image": "microsoft/mssql-server-windows-express:latest",
     "description": "Microsoft SQL Server Express for Windows containers",
     "categories": [
@@ -4459,6 +5280,7 @@
     ],
     "platform": "windows",
     "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
+    "restart_policy": "",
     "ports": [
       "1433/tcp"
     ],
@@ -4477,17 +5299,25 @@
         "label": "SA password"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png"
   },
   {
     "title": "IronFunctions API",
+    "name": "",
     "image": "iron/functions:latest",
     "description": "Open-source serverless computing platform",
     "categories": [
       "serverless"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "8080/tcp"
     ],
@@ -4496,18 +5326,27 @@
         "container": "/app/data"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ironfunctions.png",
     "privileged": true
   },
   {
     "title": "IronFunctions UI",
+    "name": "",
     "image": "iron/functions-ui:latest",
     "description": "Open-source user interface for IronFunctions",
     "categories": [
       "serverless"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "4000/tcp"
     ],
@@ -4522,18 +5361,26 @@
         "label": "API URL"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ironfunctions.png",
     "privileged": true
   },
   {
     "title": "Solr",
+    "name": "",
     "image": "solr:latest",
     "description": "Open-source enterprise search platform",
     "categories": [
       "search-engine"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "8983/tcp"
     ],
@@ -4542,17 +5389,26 @@
         "container": "/opt/solr/mydata"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/solr.png"
   },
   {
     "title": "Redis",
+    "name": "",
     "image": "redis:latest",
     "description": "Open-source in-memory data structure store",
     "categories": [
       "database"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "6379/tcp"
     ],
@@ -4561,17 +5417,26 @@
         "container": "/data"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/redis.png"
   },
   {
     "title": "RabbitMQ",
+    "name": "",
     "image": "rabbitmq:latest",
     "description": "Highly reliable enterprise messaging system",
     "categories": [
       "messaging"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "5671/tcp",
       "5672/tcp"
@@ -4581,11 +5446,18 @@
         "container": "/var/lib/rabbitmq"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/rabbitmq.png"
   },
   {
     "title": "Ghost",
+    "name": "",
     "image": "ghost:latest",
     "description": "Free and open-source blogging platform",
     "categories": [
@@ -4593,6 +5465,7 @@
     ],
     "platform": "linux",
     "note": "Access the blog management interface under <code>/ghost/</code>.",
+    "restart_policy": "",
     "ports": [
       "2368/tcp"
     ],
@@ -4601,11 +5474,18 @@
         "container": "/var/lib/ghost/content"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ghost.png"
   },
   {
     "title": "Plesk",
+    "name": "",
     "image": "plesk/plesk:latest",
     "description": "WebOps platform and hosting control panel",
     "categories": [
@@ -4613,6 +5493,7 @@
     ],
     "platform": "linux",
     "note": "Default credentials: admin / changeme",
+    "restart_policy": "",
     "ports": [
       "21/tcp",
       "80/tcp",
@@ -4621,17 +5502,27 @@
       "8443/tcp",
       "8447/tcp"
     ],
+    "volumes": [],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/plesk.png"
   },
   {
     "title": "Joomla",
+    "name": "",
     "image": "joomla:latest",
     "description": "Another free and open-source CMS",
     "categories": [
       "CMS"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "80/tcp"
     ],
@@ -4651,17 +5542,25 @@
         "label": "Database password"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/joomla.png"
   },
   {
     "title": "Drupal",
+    "name": "",
     "image": "drupal:latest",
     "description": "Open-source content management framework",
     "categories": [
       "CMS"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "80/tcp"
     ],
@@ -4670,17 +5569,26 @@
         "container": "/var/www/html"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/drupal.png"
   },
   {
     "title": "Plone",
+    "name": "",
     "image": "plone:latest",
     "description": "A free and open-source CMS built on top of Zope",
     "categories": [
       "CMS"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "8080/tcp"
     ],
@@ -4689,17 +5597,26 @@
         "container": "/data"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/plone.png"
   },
   {
     "title": "Magento 2",
+    "name": "",
     "image": "alankent/gsd:latest",
     "description": "Open-source e-commerce platform",
     "categories": [
       "CMS"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "80/tcp",
       "3000/tcp",
@@ -4710,6 +5627,12 @@
         "container": "/var/www/html/"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/magento.png"
   },
@@ -4723,6 +5646,9 @@
       "Monitoring"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
+    "ports": [],
     "volumes": [
       {
         "container": "/var/run/docker.sock",
@@ -4739,18 +5665,27 @@
         "label": "SPM monitoring token"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/sematext_agent.png",
     "privileged": true
   },
   {
     "title": "Datadog agent",
+    "name": "",
     "image": "datadog/agent:latest",
     "description": "Collect events and metrics",
     "categories": [
       "Monitoring"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
+    "ports": [],
     "volumes": [
       {
         "container": "/var/run/docker.sock",
@@ -4774,17 +5709,25 @@
         "label": "Datadog API key"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/datadog_agent.png"
   },
   {
     "title": "Mautic",
+    "name": "",
     "image": "mautic/mautic:latest",
     "description": "Open-source marketing automation platform",
     "categories": [
       "marketing"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "80/tcp"
     ],
@@ -4804,17 +5747,25 @@
         "label": "Database password"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mautic.png"
   },
   {
     "title": "Wowza",
+    "name": "",
     "image": "sameersbn/wowza:4.1.2-8",
     "description": "Streaming media server",
     "categories": [
       "streaming"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "1935/tcp",
       "8086/tcp",
@@ -4837,17 +5788,25 @@
         "label": "License key"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wowza.png"
   },
   {
     "title": "Jenkins",
+    "name": "",
     "image": "jenkins/jenkins:lts",
     "description": "Open-source continuous integration tool",
     "categories": [
       "continuous-integration"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "8080/tcp",
       "50000/tcp"
@@ -4863,17 +5822,25 @@
         "label": "Jenkins options"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/jenkins.png"
   },
   {
     "title": "Redmine",
+    "name": "",
     "image": "redmine:latest",
     "description": "Open-source project management tool",
     "categories": [
       "project-management"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "3000/tcp"
     ],
@@ -4882,17 +5849,26 @@
         "container": "/usr/src/redmine/files"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/redmine.png"
   },
   {
     "title": "Odoo",
+    "name": "",
     "image": "odoo:latest",
     "description": "Open-source business apps",
     "categories": [
       "project-management"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "8069/tcp"
     ],
@@ -4919,11 +5895,17 @@
         "label": "Database password"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/odoo.png"
   },
   {
     "title": "Urbackup",
+    "name": "",
     "image": "cfstras/urbackup",
     "description": "Open-source network backup",
     "categories": [
@@ -4931,6 +5913,7 @@
     ],
     "platform": "linux",
     "note": "This application web interface is exposed on the port 55414 inside the container.",
+    "restart_policy": "",
     "ports": [
       "55413/tcp",
       "55414/tcp",
@@ -4942,38 +5925,56 @@
         "container": "/var/urbackup"
       }
     ],
+    "env": [],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/urbackup.png"
   },
   {
     "title": "CommandBox",
+    "name": "",
     "image": "ortussolutions/commandbox:latest",
     "description": "ColdFusion (CFML) CLI",
     "categories": [
       "development"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "8080/tcp",
       "8443/tcp"
     ],
+    "volumes": [],
     "env": [
       {
         "name": "CFENGINE",
         "set": "lucee@4.5"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ortussolutions-commandbox.png"
   },
   {
     "title": "ContentBox",
+    "name": "",
     "image": "ortussolutions/contentbox:latest",
     "description": "Open-source modular CMS",
     "categories": [
       "CMS"
     ],
     "platform": "linux",
+    "note": "",
+    "restart_policy": "",
     "ports": [
       "8080/tcp",
       "8443/tcp"
@@ -5000,6 +6001,11 @@
         "set": "lucee@4.5"
       }
     ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
     "type": 1,
     "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ortussolutions-contentbox.png"
   }

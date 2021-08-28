@@ -1,5 +1,5 @@
 {
-  "title": "Imported Template",
+  "title": "master-templates",
   "containers": [
     {
       "title": "Airsonic",
@@ -5778,6 +5778,16 @@
         {
           "name": "MINIO_SECRET_KEY",
           "label": "Minio secret key"
+        },
+        {
+          "name": "MINIO_DOMAIN",
+          "default": "",
+          "label": "Minio domain"
+        },
+        {
+          "name": "MINIO_BROWSER",
+          "default": "true",
+          "label": "Minio browser"
         }
       ],
       "command": "server /data",
