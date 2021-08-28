@@ -4370,8 +4370,10 @@
                 "storage"
             ],
             "platform": "linux",
+            "restart_policy": "always",
             "ports": [
-                "9000/tcp"
+                "9000/tcp",
+                "9001/tcp"
             ],
             "volumes": [
                 {
@@ -4383,11 +4385,11 @@
             ],
             "env": [
                 {
-                    "name": "MINIO_ACCESS_KEY",
+                    "name": "MINIO_ROOT_USER",
                     "label": "Minio access key"
                 },
                 {
-                    "name": "MINIO_SECRET_KEY",
+                    "name": "MINIO_ROOT_PASSWORD",
                     "label": "Minio secret key"
                 },
                 {
@@ -4401,7 +4403,7 @@
                     "label": "Minio browser"
                 }
             ],
-            "command": "server /data",
+            "command": "server /data --console-address \":9001\"",
             "type": 1,
             "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/minio.png"
         },

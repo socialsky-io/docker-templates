@@ -5157,9 +5157,10 @@
     ],
     "platform": "linux",
     "note": "",
-    "restart_policy": "",
+    "restart_policy": "always",
     "ports": [
-      "9000/tcp"
+      "9000/tcp",
+      "9001/tcp"
     ],
     "volumes": [
       {

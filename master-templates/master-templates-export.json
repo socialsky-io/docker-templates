@@ -5755,10 +5755,16 @@
       ],
       "platform": "linux",
       "note": "",
-      "restart_policy": "",
+      "restart_policy": "always",
       "ports": [
         {
           "cport": "9000",
+          "proto": "tcp"
+        },
+        {
+          "label": "",
+          "hport": "",
+          "cport": "9001",
           "proto": "tcp"
         }
       ],
