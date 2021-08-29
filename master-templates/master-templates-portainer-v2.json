@@ -4385,25 +4385,15 @@
             ],
             "env": [
                 {
-                    "name": "MINIO_ROOT_USER",
+                    "name": "MINIO_ACCESS_KEY",
                     "label": "Minio access key"
                 },
                 {
-                    "name": "MINIO_ROOT_PASSWORD",
+                    "name": "MINIO_SECRET_KEY",
                     "label": "Minio secret key"
-                },
-                {
-                    "name": "MINIO_DOMAIN",
-                    "default": "",
-                    "label": "Minio domain"
-                },
-                {
-                    "name": "MINIO_BROWSER",
-                    "default": "true",
-                    "label": "Minio browser"
                 }
             ],
-            "command": "server /data --console-address \":9001\"",
+            "command": "server /data",
             "type": 1,
             "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/minio.png"
         },
